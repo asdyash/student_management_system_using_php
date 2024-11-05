@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center the container vertically */
+}
+
+.form__img {
+    width: 100%; /* Image takes full width */
+    max-height: 100vh; /* Prevent image overflow */
+}
+
+.form__content {
+    background: white; /* Form background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Add some spacing between image and form */
+    flex: 1; /* Allow the form to grow */
+}
+
+.form__title {
+    text-align: center;
+}
+
+.form__div {
+    margin-top: 20px; /* Space between form elements */
+}
+
+.form__label {
+    display: block; /* Display label as block */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.form__input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.form__icon {
+    position: absolute; /* Icon position */
+    margin-left: 10px; /* Space from left */
+    margin-top: 15px; /* Space from top */
+}
+
+.form__forgot {
+    display: block; /* Allows for proper spacing */
+    text-align: center;
+    margin: 10px 0;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    background: #ff8080;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Initially hide the error message */
+}

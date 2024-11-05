@@ -1,0 +1,157 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6b1b22, #ff8080);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Container */
+.brs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Form Container for Side-by-Side Layout */
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Form Image */
+.form__img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+/* Form Styling */
+.form__content {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__title {
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form__forgot {
+    margin: 20px;
+    display: block;
+    text-align: center;
+    color: #ff8080;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.form__forgot:hover {
+    color: #ff4d4d;
+}
+
+/* Form Fields */
+.form__div {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+.form__div-input {
+    padding-left: 2.5rem;
+}
+
+.form__label {
+    position: absolute;
+    left: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: #777;
+    pointer-events: none;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background: #f9f9f9;
+}
+
+/* Submit Button */
+.form__button {
+    
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff8080;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0px 4px 12px rgba(255, 128, 128, 0.4);
+}
+
+.form__button:hover {
+    background: #ff4d4d;
+}
+
+/* Error Message */
+.error {
+    color: white;
+    text-align: center;
+    background: #ff8080;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
